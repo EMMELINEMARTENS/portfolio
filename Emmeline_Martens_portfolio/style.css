@@ -1,0 +1,296 @@
+/* @import url("https://use.typekit.net/jmk3xov.css"); */
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.87);
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main{
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  margin: 0px auto;
+  /*padding: 120px 0px;*/
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+ 
+}
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+  }
+
+  section {
+    grid-column: 4 / 10;
+    padding: 1rem;
+    background: var(--dark-bg);
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+    
+  }
+  
+  section .light{
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  img{
+    height: 5vh;
+    display:inline-block;
+  }
+
+  .zoohackathon{
+    height: 20vh;
+    margin-top: 5%;
+    margin-right: 2%;
+  }
+  .accomplishments{
+    grid-column: 1 / 12;
+    padding: 1rem;
+    padding-left:10%;
+    margin:0%;
+    margin-top: -15%;
+    width: 100%;
+    height: 40vh;
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+  }
+
+  .accomplishment{
+    display:flex;
+  }
+  .animator{
+    flex-direction: column;
+  }
+  .skills_container{
+    grid-column: 1 / 12;
+    padding-left:10%;
+    margin-bottom:4%;
+    margin-top: -15%;
+    width: 100%;
+    font-size: 1.25rem;
+    background-color: var(--dark-bg);
+  }
+
+
+  
+  .flexbox{
+    flex-direction: flex;
+    margin-top: 40%;
+
+  }
+  .right{
+    margin-left: -10.5%;
+    margin-top: 0%;
+    display:flex;
+    width: 62%;
+    margin-bottom: 3%;
+  }
+  .boxcol{
+    display:inline-block;
+    margin-right: 3%;
+  }
+  .box{
+    display:inline-block;
+    background-color:var(--dark-bg);
+    margin-right: 10%;
+    padding: 3%;
+
+  }
+  .box2{
+    display:inline-block;
+    margin-right: 10%;
+    padding: 3%;
+    padding-top:-30%;
+
+  }
+
+  .accomplishments p .time i{
+    font-size: 5pt;
+  }
+
+  .slideshow-container {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 53%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev{
+  left: 25%;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 23%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slideshow_part {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slideshow_part video{
+  margin-left: 2.5%;
+}
+.slideshow_part iframe{
+  margin-left: 2.5%;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+  blockquote {
+    margin: -10%;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: white;
+    font-size: 2rem;
+    display: inline;
+
+  }
+
+  .left {
+    grid-column: 5 / 10;
+  }
+  .line{
+    height: 2vh;
+    line-height: 2vh;
+    font-size: 12px;
+    margin: 0 auto 10px;
+    padding: 0 0 0 10px;
+    background-color: #d2d6d7;
+    position: relative;
+    border-radius: 10px;
+  }
+
+
+
+  /* Vaardigheden animation */
+  div .marginclass{
+    
+    margin-left: -10%;
+  }
+  .line:before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 2vh;
+    top: 0;
+    z-index: -2;
+    background-color: #d2d6d7;
+    border-radius: 10px;
+  }
+  .line:after{
+    content: '';
+    background: #DF96EB;
+    height: 2vh;
+    transition: 0.8s;
+    display: block;
+    width: 100%;
+    animation: animate 1 4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  .line1:after{
+    max-width: 80%;
+  }
+  .line2:after{
+    max-width: 100%;
+  }
+  .line3:after{
+    max-width: 60%;
+  }
+  @keyframes animate {
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+
