@@ -65,11 +65,11 @@ function addStar(){
 Array(100).fill().forEach(addStar);
 
 // change background
-const galaxyTexture = new THREE.TextureLoader().load('galaxy.jpg');
+const galaxyTexture = new THREE.TextureLoader().load('images/galaxy.jpg');
 scene.background = galaxyTexture;
 
 // add myself to the scene
-const EmmelineTexture = new THREE.TextureLoader().load('Emmeline.jpg');
+const EmmelineTexture = new THREE.TextureLoader().load('images/Emmeline.jpg');
 
 const Emmeline = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3 ),
