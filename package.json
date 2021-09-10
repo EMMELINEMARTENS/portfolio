@@ -7,6 +7,7 @@
     "serve": "vite preview"
   },
   "devDependencies": {
+    "source-map-explorer": "^2.5.2",
     "vite": "^2.5.2"
   },
   "dependencies": {
