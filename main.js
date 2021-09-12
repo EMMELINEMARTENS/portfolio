@@ -3,10 +3,10 @@
 
 
 import * as THREE from 'three';
-import { GLTFLoader } from './three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 // move with the mouse
-import{OrbitControls} from './three/examples/jsm/controls/OrbitControls';
+import{OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 
 
 const scene = new THREE.Scene();
