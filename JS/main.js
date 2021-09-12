@@ -1,5 +1,5 @@
-import './style.css';
-import './slideshow';
+// import './style.css';
+// import './slideshow';
 
 
 import * as THREE from 'three';
@@ -92,7 +92,7 @@ purplePlanetGltf.load('3D_models/purpleplanet/purpleplanet.gltf', (gltf) => {
 
   purpleplanet.rotation.y += 0.01;
   purpleplanet.position.z = 30;
-  purpleplanet.position.x = -10;
+  purpleplanet.position.x = -2;
   
   
   scene.add(purpleplanet);

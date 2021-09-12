@@ -21,7 +21,7 @@ main{
   z-index: 99;
   position: absolute;
   margin: 0px auto;
-  /*padding: 120px 0px;*/
+  padding: 120px 0px;
   
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -72,6 +72,8 @@ canvas {
 
   .zoohackathon{
     height: 20vh;
+    width: 80vw;
+    margin-left: 3%;
     margin-top: 5%;
     margin-right: 2%;
   }
@@ -112,7 +114,7 @@ canvas {
 
   }
   .right{
-    /* margin-left:-10.5%; */
+    margin-left:-10.5%;
     margin-top: 0%;
     display:flex;
     width: 62%;
@@ -151,7 +153,7 @@ canvas {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 51%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -200,10 +202,14 @@ canvas {
 }
 
 .slideshow_part video{
-  margin-left: 2.5%;
+  margin-left: 4%;
+  width:92%;
+  height:60vh
 }
 .slideshow_part iframe{
-  margin-left: 2.5%;
+  margin-left: 4%;
+  width:92%;
+  height:60vh
 }
 
 @-webkit-keyframes fade {
@@ -277,13 +283,13 @@ canvas {
     border-radius: 10px;
   }
   .line1:after{
-    max-width: 80%;
+    max-width: 65%;
   }
   .line2:after{
-    max-width: 100%;
+    max-width: 85%;
   }
   .line3:after{
-    max-width: 60%;
+    max-width: 50%;
   }
   @keyframes animate {
     0%{
