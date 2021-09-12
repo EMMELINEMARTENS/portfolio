@@ -68,11 +68,11 @@ function addStar(){
 Array(100).fill().forEach(addStar);
 
 // change background
-const galaxyTexture = new THREE.TextureLoader().load('galaxy.jpg');
+const galaxyTexture = new THREE.TextureLoader().load('./galaxy.jpg');
 scene.background = galaxyTexture;
 
 // add myself to the scene
-const EmmelineTexture = new THREE.TextureLoader().load('Emmeline.jpg');
+const EmmelineTexture = new THREE.TextureLoader().load('./Emmeline.jpg');
 
 const Emmeline = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3 ),
@@ -86,7 +86,7 @@ scene.add(Emmeline);
 const purplePlanetGltf = new GLTFLoader();
 var purpleplanet;
 
-purplePlanetGltf.load('3D_models/purpleplanet/purpleplanet.gltf', (gltf) => {
+purplePlanetGltf.load('./3D_models/purpleplanet/purpleplanet.gltf', (gltf) => {
  purpleplanet = gltf.scene.children[0];
 
 
