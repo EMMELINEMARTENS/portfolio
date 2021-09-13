@@ -18,7 +18,9 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 renderer.setPixelRatio(window.devicePixelRatio);
+
 renderer.setSize(window.innerWidth, window.innerHeight);
+
 camera.position.setZ(30);
 camera.position.setX(-3);
 
@@ -58,7 +60,7 @@ function addStar(){
   const material = new THREE.MeshStandardMaterial({color: 0xDBC0FF});
   const star = new THREE.Mesh(geometry,material);
 
-  const[x,y,z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(200));
+  const[x,y,z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
 
   star.position.set(x,y,z);
   scene.add(star);
@@ -100,11 +102,26 @@ purplePlanetGltf.load('./3D_models/purpleplanet/purpleplanet.gltf', (gltf) => {
 });
 
 
+var audioContext = new AudioContext();
 
+audioContext.resume();
 
 Emmeline.position.z = -5;
 Emmeline.position.x = 2;
+// add audio
+const listener = new THREE.AudioListener();
+camera.add(listener);
 
+// create a global audio source
+const sound = new THREE.Audio( listener );
+
+const audio = new THREE.AudioLoader();
+audio.load('audio/comet.mp3',  function( buffer ) {
+	sound.setBuffer( buffer );
+	sound.setLoop( true );
+	sound.setVolume( 0.02 );
+	sound.play();
+});
 // scroll page
 function moveCamera(){
 // get top property

@@ -1,4 +1,4 @@
-/* @import url("https://use.typekit.net/jmk3xov.css"); */
+
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.87);
@@ -7,25 +7,32 @@
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
   font-style: normal;
+
+;
+  
+}
+html, body{
+  margin: 0%;
+  padding:0%;
+  
+
+ 
+  
 }
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
 
 main{
-  width: 100vw;
+  
   color: white;
   z-index: 99;
   position: absolute;
+  width: 100%;
   margin: 0px auto;
-  padding: 120px 0px;
-  
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
- 
+  /* padding: 120px 0px; */
+  /* background-color:blue; */
+  /* display: grid;
+  grid-template-columns: repeat(12, 1fr); */
+
 }
 h1, h2, h3, blockquote {
   font-family: elevon, sans-serif;
@@ -37,34 +44,41 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
+  width:100%;
 }
 
 
 
   header {
     background: var(--dark-bg);
-    grid-column: 2 / span 5;
-    font-size: 2.5rem;
+    width: 40%;
+    font-size: 2.3rem;
     padding: 2rem;
+    margin-left: 3%;
+    margin-top: 5%;
     margin-bottom: var(--spacing);
   }
 
   section {
-    grid-column: 4 / 10;
     padding: 1rem;
     background: var(--dark-bg);
-    width: 100%;
+    width: 80%;
     font-size: 1.25rem;
     line-height: 1.5;
     margin-bottom: var(--spacing);
-    
+
   }
-  
-  section .light{
+
+  div.light{
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
     margin: 0 auto;
-    width: 100%;
+    width: 60%;
   }
-  
+
   img{
     height: 5vh;
     display:inline-block;
@@ -78,12 +92,12 @@ canvas {
     margin-right: 2%;
   }
   .accomplishments{
-    grid-column: 1 / 12;
-    padding: 1rem;
-    padding-left:10%;
-    margin:0%;
-    margin-top: -15%;
-    width: 100%;
+    
+    /* padding: 1rem; */
+    /* padding-left:10%; */
+    margin:0 auto;
+    margin-top: 3%;
+    width: 95%;
     height: 40vh;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -97,45 +111,51 @@ canvas {
     flex-direction: column;
   }
   .skills_container{
-    grid-column: 1 / 12;
+    
     padding-left:10%;
     margin-bottom:4%;
     margin-top: -15%;
-    width: 100%;
+    width: 90%;
     font-size: 1.25rem;
     background-color: var(--dark-bg);
   }
 
 
-  
+
   .flexbox{
     flex-direction: flex;
-    margin-top: 40%;
+    margin-top:40%;
+
+    
 
   }
   .right{
-    margin-left:-10.5%;
+    margin-left:-7%;
     margin-top: 0%;
+    padding-right:-10%;
     display:flex;
-    width: 62%;
+    width: 64%;
+
     margin-bottom: 3%;
   }
   .boxcol{
     display:inline-block;
     margin-right: 3%;
+    width: 20%;
   }
   .box{
     display:inline-block;
     background-color:var(--dark-bg);
-    margin-right: 10%;
-    padding: 3%;
+    margin-bottom:3%;
+    margin-left:10%;
+    padding:2%;
 
   }
   .box2{
     display:inline-block;
-    margin-right: 10%;
+    margin-right: 7%;
     padding: 3%;
-    padding-top:-30%;
+    /* padding-top:-30%; */
 
   }
 
@@ -153,7 +173,7 @@ canvas {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 51%;
+  top: 55%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -165,11 +185,11 @@ canvas {
   user-select: none;
 }
 .prev{
-  left: 25%;
+  left: 19%;
 }
 /* Position the "next button" to the right */
 .next {
-  right: 23%;
+  right: 19%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -223,10 +243,13 @@ canvas {
 }
 
   blockquote {
-    margin: -10%;
-    padding: 0;
-    grid-column: 2 / span 9;
+    margin: 2.5%;
+    padding: 0%;
+    width: 80vw;
+    
+    grid-column: 1 / span 10;
     margin-bottom: var(--spacing);
+    
   }
 
   blockquote p {
@@ -234,11 +257,9 @@ canvas {
     font-size: 2rem;
     display: inline;
 
+
   }
 
-  .left {
-    grid-column: 5 / 10;
-  }
   .line{
     height: 2vh;
     line-height: 2vh;
@@ -250,11 +271,14 @@ canvas {
     border-radius: 10px;
   }
 
-
+  a{
+    color: #DF96EB;
+    text-decoration:none;
+  }
 
   /* Vaardigheden animation */
   div .marginclass{
-    
+
     margin-left: -10%;
   }
   .line:before{
