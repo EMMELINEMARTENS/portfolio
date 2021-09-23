@@ -10,16 +10,22 @@ import{OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 
 
 const scene = new THREE.Scene();
-
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
 const renderer = new THREE.WebGLRenderer({
   canvas: document.getElementById('bg'),
-});
+})
 
+const canvas = renderer.domElement;
+
+const camera = new THREE.PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
+
+;
+
+ console.log(canvas.clientWidth);
 renderer.setPixelRatio(window.devicePixelRatio);
 
 renderer.setSize(window.innerWidth, window.innerHeight);
+
+
 
 camera.position.setZ(30);
 camera.position.setX(-3);
@@ -105,9 +111,16 @@ purplePlanetGltf.load('./3D_models/purpleplanet/purpleplanet.gltf', (gltf) => {
 var audioContext = new AudioContext();
 
 audioContext.resume();
+if(canvas.clientWidth >= 1278){
+  
+  Emmeline.position.z = -5;
+Emmeline.position.x = 1.25;
+} else if (canvas.clientWidth >= 1){
+  
+  Emmeline.position.z = -10;
+  Emmeline.position.x = 0.5;
+}
 
-Emmeline.position.z = -5;
-Emmeline.position.x = 2;
 // add audio
 const listener = new THREE.AudioListener();
 camera.add(listener);
