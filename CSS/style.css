@@ -470,10 +470,11 @@ canvas {
     padding:1%;
   }
 }
+
 @media  screen and ( min-height: 700px) {
   div.work{
     font-size: 0.8rem;
-    margin-top:260%;
+    margin-top:270%;
     margin-left:0%;
     padding:1%;
   }
@@ -491,6 +492,17 @@ canvas {
     font-size: 0.8rem;
     margin-top:440%;
     margin-left:0%;
+    padding:1%;
+  }
+
+
+}
+@media  screen and ( min-width: 800px) {
+  div.work{
+    
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-top:50%;
     padding:1%;
   }
 }
